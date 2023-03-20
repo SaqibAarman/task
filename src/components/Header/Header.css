@@ -1,0 +1,149 @@
+.header {
+  width: 70%;
+  height: 75px;
+  display: flex;
+  padding-bottom: 10px;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #cccccc;
+  position: relative;
+  left: 20%;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #545454;
+}
+
+.nav-list {
+  display: flex;
+  padding: 0;
+  margin-left: 1.5rem;
+  font-size: 1.25rem;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.nav-list > span {
+  padding-left: 10px;
+  color: #545454;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 80px;
+  right: 20px;
+  background-color: #fff;
+  border-radius: 25px;
+  padding: 20px 20px;
+  width: 300px;
+  height: 400px;
+  z-index: 1;
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 40px 0 rgba(0, 0, 0, 0.19);
+}
+
+.dropdown-menu::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  right: 20px;
+  height: 20px;
+  width: 20px;
+  transform: rotate(45deg);
+}
+
+.dropdown-menu.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition: 0.3s ease;
+}
+
+.dropdown-menu.inactive {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-20px);
+  transition: 0.3s ease;
+}
+
+.profile-data {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-bottom: 1px solid #cccccc;
+  margin-top: 20px;
+}
+
+.profile-data > img {
+  border-radius: 50%;
+}
+
+.profile-data > h3 {
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  padding-top: 20px;
+  font-weight: 500;
+  font-size: 22px;
+  color: #545454;
+  line-height: 1.2rem;
+}
+
+.profile-data > span {
+  font-size: 22px;
+  padding: 20px;
+  color: #cccccc;
+}
+
+.dropdown-menu > ul > li {
+  padding: 15px 0;
+  border-top: 1px solid #545454;
+}
+
+.dropdown-menu > ul > li:nth-child(3) {
+  border: none;
+}
+
+.dropdownItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  padding: 10px;
+  border-bottom: 1px solid #cccccc;
+}
+
+.dropdownItem:nth-child(3) {
+  border: none;
+}
+
+.dropdownItem > img {
+  border-radius: 50%;
+}
+
+.dropdownItem > span {
+  margin-left: 10px;
+  font-size: 18px;
+  color: #545454;
+}
+
+.sign {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.sign > button {
+  padding: 15px 30px;
+  border-radius: 25px;
+  background-color: #d55151;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 500;
+  color: white;
+  border: none;
+}

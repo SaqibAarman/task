@@ -1,0 +1,14 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.user-card {
+  position: absolute;
+  border-bottom: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
